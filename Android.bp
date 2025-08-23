@@ -24515,6 +24515,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libifaa_factory",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libifaa_factory.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libutils",
+                "libQSEEComAPI",
+                "libhardware",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmindroid-app",
     owner: "oneplus",
     strip: {
@@ -25303,6 +25332,70 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libz",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librpmbengclient",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/librpmbengclient.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libdmabufheap",
+                "libminkdescriptor",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsecurity_event_dcs_vnd",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsecurity_event_dcs_vnd.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.commondcs-V1-ndk",
+                "libbinder",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcrypto",
+                "libhardware",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
@@ -27132,6 +27225,15 @@ prebuilt_etc_xml {
     name: "manifest_oplus_fingerprint_aidl_v3.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_ifaa.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_ifaa.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -31006,6 +31108,45 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libutils",
                 "libtinyxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service",
+            ],
+            shared_libs: [
+                "libbinder",
+                "liblog",
+                "libbase",
+                "libhidlbase",
+                "libhidltransport",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "librpmbengclient",
+                "libifaa_factory",
+                "libbinder_ndk",
+                "libQSEEComAPI",
+                "vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk",
+                "libsecurity_event_dcs_vnd",
                 "libc++",
                 "libc",
                 "libm",
