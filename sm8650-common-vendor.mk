@@ -1799,7 +1799,8 @@ PRODUCT_PACKAGES += \
     wlschgd \
     irisConfig \
     oplus_sensor_fb \
-    touchDaemon
+    touchDaemon \
+    touchHidlTest
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
