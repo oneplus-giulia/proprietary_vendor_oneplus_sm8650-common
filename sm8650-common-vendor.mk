@@ -1411,7 +1411,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.oplus.hardware.charger-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
@@ -1510,7 +1509,6 @@ PRODUCT_PACKAGES += \
     libsnapdragoncolor-pxlw \
     libuahcore \
     vendor.oplus.hardware.appradio@1.0 \
-    vendor.oplus.hardware.charger-V6-ndk \
     vendor.oplus.hardware.communicationcenter-V1-ndk \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
