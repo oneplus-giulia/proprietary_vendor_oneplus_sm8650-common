@@ -27424,6 +27424,9 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    required: [
+        "vendor.qti.audio-adsprpc-service.rc",
+    ],
 }
 
 cc_prebuilt_binary {
@@ -28289,6 +28292,10 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
+    required: [
+        "vendor.qti.hardware.display.composer-service.rc",
+        "vendor.qti.hardware.display.composer-service.xml",
+    ],
 }
 
 cc_prebuilt_binary {
