@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
@@ -1507,9 +1506,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
-    vendor.oplus.hardware.performance-V1-ndk \
-    vendor.oplus.hardware.performance-V2-ndk \
-    vendor.oplus.hardware.performance-V3-ndk \
     vendor.oplus.hardware.stability.oplus_project-V2-ndk \
     vendor.oplus.hardware.urcc-V1-ndk \
     vendor.pixelworks.hardware.display-V2-ndk \
@@ -1644,9 +1640,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
     manifest_oplus_stability_project_aidl.xml \
-    manifest_performance_aidl.xml \
     manifest_touch_aidl.xml \
-    vendor.oplus.hardware.urcc-service.xml \
     vendor.pixelworks.hardware.display-service.xml \
     vendor.pixelworks.hardware.feature-service.xml \
     ATFWD-daemon \
@@ -1775,7 +1769,6 @@ PRODUCT_PACKAGES += \
     commcenterd \
     cwb_utils_aidl \
     android.hardware.secure_element-service.qti \
-    vendor-oplus-hardware-performance-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
