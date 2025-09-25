@@ -3616,6 +3616,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcne.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libdiag",
@@ -8876,6 +8877,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqcc_sdk.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -10660,6 +10662,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqms_client.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "liblog",
                 "libbinder",
                 "libutils",
@@ -16493,6 +16496,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.libdpmframework.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libhidlbase_shim",
                 "libdiag",
                 "libbinder",
@@ -29274,6 +29278,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qcc-vendor",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -29432,6 +29437,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qms",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libavservices_minijail",
                 "libcutils",
                 "liblog",
@@ -30617,6 +30623,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/xtra-daemon",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "libutils",
                 "libcutils",
                 "libcrypto",
