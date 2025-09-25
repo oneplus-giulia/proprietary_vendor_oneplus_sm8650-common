@@ -1614,6 +1614,7 @@ PRODUCT_PACKAGES += \
     mwqem-saidl.xml \
     qesdk-manager.xml \
     qms-saidl.xml \
+    secure_element-service-omapi.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.alarm.xml \
