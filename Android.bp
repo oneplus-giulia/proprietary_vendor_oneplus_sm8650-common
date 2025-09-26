@@ -31450,6 +31450,41 @@ cc_prebuilt_binary {
     device_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "touchHidlTest",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/touchHidlTest",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.touch-V2-ndk",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libhardware",
+                "libutils",
+                "libbinder_ndk",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    device_specific: true,
+}
+
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,
